@@ -1,7 +1,7 @@
 # Multi-Agent AI Orchestration System
 
 ## 📘 Overview
-This project was developed as part of a 24-hour AI internship challenge. It involves a hierarchical and modular multi-agent system capable of interpreting natural language queries and delegating them to appropriate task agents for execution.
+This project involves a hierarchical and modular multi-agent system capable of interpreting natural language queries and delegating them to appropriate task agents for execution.
 
 The system architecture is designed for **Kali Linux** and supports **WSL2** compatibility, integrating secure gRPC communication, kernel-assisted agent control, and real-time monitoring using Prometheus.
 
