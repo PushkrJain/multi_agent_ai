@@ -159,6 +159,8 @@ python server.py
 3. Run the CLI client:
 ```bash
 python client.py
+```
+
 ---
 
 ## 📡 gRPC API Documentation
