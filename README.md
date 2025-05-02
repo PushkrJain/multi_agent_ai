@@ -90,7 +90,7 @@ graph TD
 
 ### Step 1: Clone Repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/PushkrJain/multi_agent_ai.git
 cd multi-agent-system
 ```
 
