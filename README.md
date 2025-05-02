@@ -138,6 +138,16 @@ openssl req -x509 -newkey rsa:4096 -nodes -out shared/config/agent_cert.pem -key
 ```
 
 ### Step 8: Export Required API Keys
+All the following services provide free API keys for development:
+- 🌤️ WeatherAPI → https://www.weatherapi.com/
+- 🌦️ OpenWeatherMap → https://home.openweathermap.org/api_keys
+- 📰 NewsAPI → https://newsapi.org/register
+- 🗞️ NewsData.io → https://newsdata.io/
+- 🧾 CurrentsAPI → https://currentsapi.services/en/docs/
+- 🌐 DeepL Translator → https://www.deepl.com/pro-api
+
+Once registered, export your keys using the following commands:
+
 ```bash
 export WEATHERAPI_KEY=<your_weatherapi_key>
 export OWM_API_KEY=<your_openweathermap_key>
