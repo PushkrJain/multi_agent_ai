@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+message AgentMessage {
+  string id = 1;
+  bytes payload = 2;
+  enum Urgency {
+    NORMAL = 0;
+    ELEVATED = 1;
+    CRITICAL = 2;
+  }
+  Urgency urgency = 3;
+  repeated string audit_trail = 4;
+}
+
+service AgentService {
+  rpc SendAgentMessage (AgentMessage) returns (AgentMessage);
+}
