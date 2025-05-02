@@ -203,5 +203,3 @@ Metrics available at: `http://localhost:9090/metrics`
 - `api_error_count{agent="translation"}`
 
 ---
-
-> 🛠️ Developed by Pushkar as part of a 24-hour AI Internship Challenge
