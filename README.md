@@ -137,12 +137,28 @@ openssl req -x509 -newkey rsa:4096 -nodes -out shared/config/agent_cert.pem -key
 -subj "/C=US/ST=KaliAgents/O=AgentOrchestration/CN=internal-ca"
 ```
 
-### Step 8: Run the System
+### Step 8: Export Required API Keys
 ```bash
-python server.py
-python client.py
+export WEATHERAPI_KEY=<your_weatherapi_key>
+export OWM_API_KEY=<your_openweathermap_key>
+export NEWSAPI_KEY=<your_newsapi_key>
+export NEWSDATA_KEY=<your_newsdata_key>
+export CURRENTSAPI_KEY=<your_currentsapi_key>
+export DEEPL_API_KEY=<your_deepl_api_key>
 ```
 
+### Step 9: Run the System
+1. Start the gRPC server:
+```bash
+python server.py
+```
+2. Start Prometheus for monitoring:
+```bash
+./prometheus-2.52.0.linux-amd64/prometheus --config.file=prometheus.yml
+```
+3. Run the CLI client:
+```bash
+python client.py
 ---
 
 ## 📡 gRPC API Documentation
